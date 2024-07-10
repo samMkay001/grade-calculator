@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first{
+    padding: 7%;
+    background-image: linear-gradient( blue, orange);
+}
+.second{
+    margin: auto;
+    width:40% ;  
+    padding: 15%;
+    height: 20%;
+    background-color: rgb(51, 95, 214);
+    border: 5px solid red;
+    position: relative;
+}
+.head{
+  
+    font-size: 70px;
+    color: white;
+    
+   
+  
+    
+}

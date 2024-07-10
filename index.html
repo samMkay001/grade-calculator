@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="first">
+        <div class="second">
+<h1 class="head">GRADE</h1>
+<input type="number" placeholder="Enter your score" style="padding: 20px;" id="score">
+<button onclick="checkScore()" style="width: 140px;height: 30px;">Check</button>
+<div id="showResult" style="border: 3px solid green; background-color: aquamarine; color: black;padding: 20%;height: 50px; width: 200px;" > grade</div>       
+</div>
+        
+    </section>
+
+
+
+    <script>
+        var song = new audio('audio/Avicii - The Nights.mp3')
+        var songe = new audio("audio/Avicii_-_Levels(128k).mp3")
+        var songd = new audio("audio/Avicii_-_Hey_Brother_(Lyric)(128k).mp3")
+        var songc = new audio("audio/Avicii_-_Heaven_(Tribute_Video)(128k).mp3")
+        var songb = new audio("audio/Avicii_-_Feeling_Good.mp3")
+        var songa = new audio("audio/jaymikee_ebanjo-abejoye-theme-song.mp3")
+
+        console.log(showResult.innerHTML);
+        function checkScore(){
+            console.log(score.value)
+        if (score.value >= 0 && score.value < 40){
+console.log('F');
+showResult.innerHTML='F'
+song.play()
+}
+else if (score.value >= 40 && score.value <  49 )
+console.log('E')
+showResult.innerHTML ='E'
+songe.play()
+else if (score.value >= 50 && score.value <  59 )
+console.log('C');
+showResult.innerHTML ='C'
+song.play()
+else if (score.value >= 60 && score.value <  69 )
+console.log('B')
+showResult.innerHTML ='B'
+song.play()
+else if (score.value >= 70 && score.value <  100 )
+console.log('A')
+showResult.innerHTML ='A'
+song.play()
+else if (score.value >= 100 && score.value <  200 )
+console.log('Invalid')
+showResult.innerHTML ='INVALID'
+        }
+    </script>
+</body>
+</html>
